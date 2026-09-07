@@ -7,7 +7,8 @@ datasource-backed categories.
 The repository currently contains only the initialized Storyblok/Next.js starter.
 Application features and Storyblok models have deliberately not been started.
 See [docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md) for the agreed delivery and Git
-workflow.
+workflow, and [docs/TEAM_TASKS.md](docs/TEAM_TASKS.md) for the work assigned to
+Josef, Samuel, and Lily.
 
 ## Local setup
 
