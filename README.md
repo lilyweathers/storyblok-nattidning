@@ -57,5 +57,9 @@ npm run build
 
 ## Delivery target
 
-The completed application will be deployed to Vercel. The production URL and
-GitHub repository URL will be added here after those resources exist.
+- Production: https://storyblok-nattidning.vercel.app
+- Repository: https://github.com/lilyweathers/storyblok-nattidning
+
+The GitHub repository is connected to Vercel. Pushes to `main` trigger production
+deployments automatically. Runtime secrets are configured in Vercel and must not
+be committed to this repository.
