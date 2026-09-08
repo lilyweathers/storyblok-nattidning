@@ -18,8 +18,6 @@ export default function SiteHeader() {
 						</div>
 					</details>
 
-					<Link href="/categories/nyheter">Nyheter</Link>
-					<Link href="/categories/guide">Guide</Link>
 				</div>
 			</nav>
 		</header>
