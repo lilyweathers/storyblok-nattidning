@@ -104,18 +104,17 @@ article list.
 
 Design and shared-interface tasks:
 
-- [ ] Translate the supplied news layout into reusable styles and components.
-- [ ] Establish the page width, typography, spacing, colors, category badges,
+- [X] Translate the supplied news layout into reusable styles and components.
+- [X] Establish the page width, typography, spacing, colors, category badges,
   cards, and responsive breakpoints.
-- [ ] Build the header with Start, Artiklar, and category links.
-- [ ] Build the VG multilevel menu, for example Artiklar → Alla artiklar and
-  author links.
-- [ ] Make the menu usable with keyboard controls and on mobile screens.
-- [ ] Build the footer with simple copyright or group information.
-- [ ] Add a simple homepage with a clear link to `/articles`.
-- [ ] Create reusable components such as `ArticleCard`, `CategoryBadge`, `Header`,
+- [X] Build the header with Start, Artiklar, and category links.
+- [X] Build the VG multilevel menu, for example Artiklar → Alla artiklar and author links.
+- [X] Make the menu usable with keyboard controls and on mobile screens.
+- [X] Build the footer with simple copyright or group information.
+- [X] Add a simple homepage with a clear link to `/articles`.
+- [X] Create reusable components such as `ArticleCard`, `CategoryBadge`, `Header`,
   `Footer`, and empty/error states.
-- [ ] If navigation will be CMS-controlled, create and document the Storyblok
+- [X] If navigation will be CMS-controlled, create and document the Storyblok
   `config` content type and coordinate registration with Josef.
 
 Suggested commits:
