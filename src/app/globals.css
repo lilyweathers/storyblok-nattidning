@@ -180,6 +180,21 @@ section a:hover {
 	color: var(--color-muted);
 }
 
+.empty-state {
+	border-top: 4px solid var(--color-accent);
+	background: var(--color-surface);
+	padding: 2rem;
+}
+
+.empty-state h2 {
+	margin: 0 0 0.75rem;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+.empty-state p {
+	margin: 0;
+}
+
 footer {
 	width: min(100% - 2rem, var(--max-width));
 	margin: 0 auto;
