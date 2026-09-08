@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { StoryblokServerRichText } from '@storyblok/react/rsc';
 import CategoryBadge from '@/components/CategoryBadge';
+import EmptyState from '@/components/EmptyState';
 import { getStories, getStory } from '@/lib/storyblokData';
 
 export async function generateMetadata({ params }) {
@@ -45,15 +47,32 @@ export default async function ArticleDetailPage({ params }) {
 		});
 
 		const content = article.content;
-		const author = content.author;
+		const author = Array.isArray(content.author)
+			? content.author[0]
+			: content.author;
+		const authorSlug = author?.slug || author?.full_slug?.replace('authors/', '');
+
+		if (!content.title || !content.content) {
+			return (
+				<main>
+					<EmptyState
+						title="Artikeln saknar innehåll"
+						message="Den här artikeln finns i Storyblok men behöver titel och innehåll innan den kan visas."
+					/>
+				</main>
+			);
+		}
 
 		return (
 			<main className="article-detail">
 				<article>
 					<div className="article-detail-meta">
 						<CategoryBadge>{content.category}</CategoryBadge>
-						{author?.content?.name && (
-							<span>Skriven av {author.content.name}</span>
+						{author?.content?.name && authorSlug && (
+							<span>
+								Skriven av{' '}
+								<Link href={`/authors/${authorSlug}`}>{author.content.name}</Link>
+							</span>
 						)}
 					</div>
 
