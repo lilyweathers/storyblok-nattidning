@@ -1,7 +1,9 @@
 export default function SiteFooter() {
-    return (
-        <footer>
-            <p>© 2026 Nättidning. All rights reserved.</p>
-        </footer>
-    );
+	const currentYear = new Date().getFullYear();
+
+	return (
+		<footer className="site-footer">
+			<p>© {currentYear} Nättidning. Alla rättigheter förbehållna.</p>
+		</footer>
+	);
 }

@@ -114,7 +114,7 @@ Design and shared-interface tasks:
 - [X] Add a simple homepage with a clear link to `/articles`.
 - [X] Create reusable components such as `ArticleCard`, `CategoryBadge`, `Header`,
   `Footer`, and empty/error states.
-- [X] If navigation will be CMS-controlled, create and document the Storyblok
+- [ ] If navigation will be CMS-controlled, create and document the Storyblok
   `config` content type and coordinate registration with Josef.
 
 Suggested commits:
