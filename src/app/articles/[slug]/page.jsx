@@ -1,7 +1,40 @@
 import { notFound } from 'next/navigation';
 import { StoryblokServerRichText } from '@storyblok/react/rsc';
 import CategoryBadge from '@/components/CategoryBadge';
-import { getStory } from '@/lib/storyblokData';
+import { getStories, getStory } from '@/lib/storyblokData';
+
+export async function generateMetadata({ params }) {
+	const { slug } = await params;
+
+	try {
+		const article = await getStory(`articles/${slug}`);
+		const content = article.content;
+
+		return {
+			title: content.title,
+			description: content.summary,
+		};
+	} catch {
+		return {
+			title: 'Artikel saknas',
+		};
+	}
+}
+
+export async function generateStaticParams() {
+	try {
+		const articles = await getStories({
+			content_type: 'article',
+			starts_with: 'articles/',
+		});
+
+		return articles.map((article) => ({
+			slug: article.slug,
+		}));
+	} catch {
+		return [];
+	}
+}
 
 export default async function ArticleDetailPage({ params }) {
 	const { slug } = await params;
