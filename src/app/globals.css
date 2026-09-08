@@ -152,6 +152,34 @@ section a:hover {
 	text-transform: uppercase;
 }
 
+.article-card {
+	display: grid;
+	gap: 0.75rem;
+	padding: 1.25rem 0;
+	border-top: 1px solid var(--color-border);
+}
+
+.article-card-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	align-items: center;
+	color: var(--color-muted);
+	font-size: 0.9rem;
+}
+
+.article-card h2 {
+	margin: 0;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.article-card p {
+	margin: 0;
+	color: var(--color-muted);
+}
+
 footer {
 	width: min(100% - 2rem, var(--max-width));
 	margin: 0 auto;
