@@ -180,6 +180,31 @@ section a:hover {
 	color: var(--color-muted);
 }
 
+.article-detail-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	align-items: center;
+	margin-bottom: 1rem;
+	color: var(--color-muted);
+	font-size: 0.95rem;
+}
+
+.article-detail-meta a {
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.article-detail-summary {
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.article-detail-content {
+	max-width: 760px;
+}
+
 .empty-state {
 	border-top: 4px solid var(--color-accent);
 	background: var(--color-surface);
