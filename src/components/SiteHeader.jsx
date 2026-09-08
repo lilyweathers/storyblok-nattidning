@@ -8,7 +8,16 @@ export default function SiteHeader() {
 
 				<div>
 					<Link href="/">Start</Link>
-					<Link href="/articles">Artiklar</Link>
+
+					<details>
+						<summary>Artiklar</summary>
+						<div>
+							<Link href="/articles">Alla artiklar</Link>
+							<Link href="/categories/nyheter">Nyheter</Link>
+							<Link href="/categories/guide">Guide</Link>
+						</div>
+					</details>
+
 					<Link href="/categories/nyheter">Nyheter</Link>
 					<Link href="/categories/guide">Guide</Link>
 				</div>
