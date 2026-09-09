@@ -168,6 +168,11 @@ section a:hover {
 	font-size: 0.9rem;
 }
 
+.article-list {
+	display: grid;
+	gap: 1rem;
+}
+
 .article-card h2 {
 	margin: 0;
 	font-family: Georgia, 'Times New Roman', serif;
