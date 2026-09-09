@@ -65,6 +65,19 @@ The GitHub repository is connected to Vercel. Pushes to `main` trigger productio
 deployments automatically. Runtime secrets are configured in Vercel and must not
 be committed to this repository.
 
+### Content-triggered deployments
+
+Published Storyblok content also triggers a production rebuild:
+
+- Vercel has a deploy hook named `Storyblok publish` targeting `main`.
+- Storyblok has an active webhook named `Vercel production rebuild` for the
+  `Story published` event.
+- The private deploy-hook URL is stored only in Storyblok and Vercel. Do not add
+  it to source control or project documentation.
+
+To verify the integration, publish a Storyblok story and confirm that a new
+production deployment appears in Vercel and reaches the `Ready` state.
+
 Search engines can discover published content through `/robots.txt` and
 `/sitemap.xml`. The sitemap reads article, author, and category stories from
 Storyblok, so new stories are included after the next deployment.
