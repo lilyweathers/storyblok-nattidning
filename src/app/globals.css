@@ -210,6 +210,67 @@ section a:hover {
 	max-width: 760px;
 }
 
+.author-page {
+	display: grid;
+	gap: 2rem;
+}
+
+.author-profile-layout {
+	display: grid;
+	grid-template-columns: minmax(220px, 320px) 1fr;
+	gap: clamp(1.5rem, 5vw, 4rem);
+	align-items: center;
+}
+
+.author-photo,
+.author-photo-placeholder {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+.author-photo-placeholder {
+	display: grid;
+	place-items: center;
+	background: var(--color-dark);
+	color: var(--color-surface);
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: clamp(4rem, 12vw, 8rem);
+}
+
+.author-profile .eyebrow {
+	margin: 0 0 0.75rem;
+	color: var(--color-accent);
+	font-size: 0.8rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.author-bio {
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+.author-articles > h2 {
+	margin: 0 0 1rem;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.author-articles .article-card h2 a {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	color: var(--color-text);
+}
+
+.author-articles .article-card h2 a:hover {
+	background: transparent;
+	color: var(--color-accent);
+}
+
 .empty-state {
 	border-top: 4px solid var(--color-accent);
 	background: var(--color-surface);
@@ -265,5 +326,14 @@ footer p {
 
 	main > section {
 		padding: 1.25rem;
+	}
+
+	.author-profile-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.author-photo,
+	.author-photo-placeholder {
+		max-width: 320px;
 	}
 }

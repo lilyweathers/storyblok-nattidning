@@ -158,10 +158,10 @@ discovery, and final production verification.
 
 Author tasks:
 
-- [ ] Add `/authors/[slug]`.
-- [ ] Fetch the author using `getStory()`.
-- [ ] Display the author's name, photo, and bio.
-- [ ] Find related articles using:
+- [x] Add `/authors/[slug]`.
+- [x] Fetch the author using `getStory()`.
+- [x] Display the author's name, photo, and bio.
+- [x] Find related articles using:
 
 ```js
 filter_query: {
@@ -171,9 +171,9 @@ filter_query: {
 }
 ```
 
-- [ ] Display the results with Samuel's `ArticleCard`.
-- [ ] Add `generateStaticParams` for all authors.
-- [ ] Handle missing authors and authors without articles.
+- [x] Display the results with Samuel's `ArticleCard`.
+- [x] Add `generateStaticParams` for all authors.
+- [x] Handle missing authors and authors without articles.
 
 Suggested commits:
 

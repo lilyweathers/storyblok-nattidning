@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	agentRules: false,
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'a.storyblok.com',
+			},
+		],
+	},
 	// The following environment variables can be safely exposed to the public bundle.
 	// The Storyblok public access token is required for features like live preview.
 	env: {
