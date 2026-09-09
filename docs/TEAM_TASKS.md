@@ -187,14 +187,14 @@ feat: add author static params
 
 Storyblok and Next.js tasks:
 
-- [ ] Create the `category` content type.
-- [ ] Create a reusable `filtered-posts` block.
-- [ ] Create one story under `categories/` for every datasource value.
-- [ ] Add `/categories/[slug]`.
-- [ ] Fetch the matching category story.
-- [ ] Render its content with `StoryblokServerComponent`.
-- [ ] Filter articles with `filter_query` using the category/URL slug.
-- [ ] Confirm that adding a datasource entry and Storyblok story creates a new
+- [x] Create the `category` content type.
+- [x] Create a reusable `filtered-posts` block.
+- [x] Create one story under `categories/` for every datasource value.
+- [x] Add `/categories/[slug]`.
+- [x] Fetch the matching category story.
+- [x] Render its content with `StoryblokServerComponent`.
+- [x] Filter articles with `filter_query` using the category/URL slug.
+- [x] Confirm that adding a datasource entry and Storyblok story creates a new
   category page without adding another Next.js route file.
 
 Suggested commits:
