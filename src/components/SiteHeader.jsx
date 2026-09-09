@@ -19,6 +19,14 @@ export default function SiteHeader() {
 							<Link href="/categories/guide">Guide</Link>
 						</div>
 					</details>
+
+					<details className="site-menu" name="main-navigation">
+						<summary>Författare</summary>
+						<div className="site-submenu">
+							<Link href="/authors/anna-berg">Anna Berg</Link>
+							<Link href="/authors/erik-lind">Erik Lind</Link>
+						</div>
+					</details>
 				</div>
 			</nav>
 		</header>

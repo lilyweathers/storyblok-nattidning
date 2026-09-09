@@ -4,11 +4,11 @@ Group examination project: a news site built with Next.js and Storyblok. Article
 are connected to authors through Storyblok references and can be browsed by
 datasource-backed categories.
 
-The repository currently contains only the initialized Storyblok/Next.js starter.
-Application features and Storyblok models have deliberately not been started.
-See [docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md) for the agreed delivery and Git
-workflow, and [docs/TEAM_TASKS.md](docs/TEAM_TASKS.md) for the work assigned to
-Josef, Samuel, and Lily.
+The application includes Storyblok-backed article lists and detail pages, author
+profiles with reverse references, and datasource-driven category routes. See
+[docs/PROJECT_PLAN.md](docs/PROJECT_PLAN.md) for the delivery plan and
+[docs/TEAM_TASKS.md](docs/TEAM_TASKS.md) for the work assigned to Josef, Samuel,
+and Lily.
 
 ## Local setup
 
@@ -64,3 +64,7 @@ npm run build
 The GitHub repository is connected to Vercel. Pushes to `main` trigger production
 deployments automatically. Runtime secrets are configured in Vercel and must not
 be committed to this repository.
+
+Search engines can discover published content through `/robots.txt` and
+`/sitemap.xml`. The sitemap reads article, author, and category stories from
+Storyblok, so new stories are included after the next deployment.
