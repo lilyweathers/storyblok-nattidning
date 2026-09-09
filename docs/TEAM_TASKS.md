@@ -208,10 +208,10 @@ feat: filter articles by datasource category
 
 SEO and production tasks:
 
-- [ ] Add `robots.txt` using `SITE_URL`.
-- [ ] Add `sitemap.xml` using Storyblok `getStories()`.
-- [ ] Include article and author URLs automatically in the sitemap.
-- [ ] Verify `SITE_URL` and Storyblok variables in Vercel.
+- [x] Add `robots.txt` using `SITE_URL`.
+- [x] Add `sitemap.xml` using Storyblok `getStories()`.
+- [x] Include article and author URLs automatically in the sitemap.
+- [x] Verify `SITE_URL` and Storyblok variables in Vercel.
 - [ ] Create a Vercel deploy hook.
 - [ ] Register that hook as a Storyblok publication webhook.
 - [ ] Publish a test change and confirm that it triggers a new deployment.
