@@ -80,7 +80,7 @@ export default async function ArticleDetailPage({ params }) {
 					<p className="article-detail-summary">{content.summary}</p>
 
 					<div className="article-detail-content">
-						<StoryblokServerRichText doc={content.content} />
+						<StoryblokServerRichText document={content.content} />
 					</div>
 				</article>
 			</main>
